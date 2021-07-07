@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+  Please see the license.html file included with this distribution for 
+  attribution and copyright information.
+-->
+
+<root>
+	<windowclass name="effectlist" merge="join">
+		<script file="utility/scripts/effectwindow.lua" />
+		<sheetdata>
+			
+			<genericcontrol name="listbottomanchor" insertbefore="list">
+				<anchored to="contentanchor" height="0">
+					<left offset="275" />
+					<right offset="-10" />
+					<bottom parent="" offset="-60" />
+				</anchored>
+			</genericcontrol>
+
+			<label_page_info name="page_info" insertbefore="list">
+				<anchored to="listbottomanchor">
+					<left offset="48" />
+					<right offset="-48" />
+					<bottom anchor="top" relation="relative" offset="0" />
+				</anchored>
+			</label_page_info>
+			<button_page_start name="page_start">
+				<anchored to="page_info" position="lefthigh" offset="24,0" />
+			</button_page_start>
+			<button_page_prev name="page_prev">
+				<anchored to="page_info" position="lefthigh" offset="0,0" />
+			</button_page_prev>
+			<button_page_next name="page_next">
+				<anchored to="page_info" position="righthigh" offset="0,0" />
+			</button_page_next>
+			<button_page_end name="page_end">
+				<anchored to="page_info" position="righthigh" offset="24,0" />
+			</button_page_end>
+
+			<list_effect_custom name="list">
+				<anchored>
+					<bottom parent="listbottomanchor" anchor="top" offset="-15" relation="relative" />
+				</anchored>
+			</list_effect_custom>
+		</sheetdata>
+	</windowclass>
+</root>

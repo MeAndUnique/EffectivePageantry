@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+  Please see the license.html file included with this distribution for 
+  attribution and copyright information.
+-->
+
+<root>
+	<template name="list_effect_custom">
+		<windowlist>
+			<child mergerule="resetandadd"></child>
+			<child><backcolor>1A40301E</backcolor></child>
+			<allowdelete />
+			<sortby mergerule="replace"><control>name</control></sortby>
+			<script file="utility/scripts/effectlist.lua" />
+			<script>
+			</script>
+			<anchored to="contentanchor">
+				<top anchor="bottom" relation="relative" offset="35" />
+				<left offset="275" />
+				<right offset="-10" />
+				<bottom parent="" offset="-75" />
+			</anchored>
+			<useallmodules />
+			<sortby><control>label</control></sortby>
+			<newfocus>label</newfocus>
+			<frame name="groupbox" offset="10,10,15,10" />
+			<class>effectsmall</class>
+			<skipempty />
+		</windowlist>
+	</template>
+</root>
