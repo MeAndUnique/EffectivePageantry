@@ -86,7 +86,8 @@ function onListChanged()
 end
 
 function onFilterChanged()
-	sFilter = filter.getValue();
+	sFilter = filter.getValue():lower();
+	applyListFilter();
 end
 
 function onSortCompare(w1, w2)
@@ -178,7 +179,7 @@ end
 
 function applyEffectFilter(rEffect)
 	if sFilter ~= "" then
-		if not not string.find(vRecord.sNameLower, sFilter, 0, true) then
+		if not string.find(rEffect.sNameLower, sFilter, 0, true) then
 			return false;
 		end
 	end
