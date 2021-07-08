@@ -31,7 +31,7 @@ Icons made by Good Ware from www.flaticon.com
 		<name>Feature: Effective Pageantry</name>
 		<version>1.0</version>
 		<author>MeAndUnique</author>
-		<description>Adds hotkey bar quality of life improvements.</description>
+		<description>Adds paging support to the Effects window.</description>
 	</properties>
 
 	<base>
